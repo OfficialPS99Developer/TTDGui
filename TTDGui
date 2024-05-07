@@ -1,0 +1,28 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("TTD Script", "Default")
+
+local tab = DrRayLibrary.newTab("Trade Scam", "ImageIdHere")
+
+tab.newInput("Victim's Username", "Type The Victim's Username", function(text)
+    print("Entered text: " .. text)
+end)
+
+tab.newToggle("Start Trade Scam", "Start Trade Scam Process", true, function(toggleState)
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
+
+tab.newButton("Hide Units", "Hides Units On Trade, But The Other Person Can Still See Them.", function()
+    print('Hello!')
+end)
+
+tab.newButton("Hide Gems", "Hides Gems On Trade, But The Other Person Can Still See Them.", function()
+    print('Hello!')
+end)
+
+tab.newSlider("FPS Lock", "To Make Game Smoother", 1000, false, function(num)
+    print(num)
+end)
