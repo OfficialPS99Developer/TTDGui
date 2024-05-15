@@ -26,3 +26,17 @@ end)
 tab.newSlider("FPS Lock", "To Make Game Smoother", 1000, false, function(num)
     print(num)
 end)
+
+local tab = DrRayLibrary.newTab("Gem Dupe", "ImageIdHere")
+
+tab.newInput("Amount Of Gem To Dupe", "Type The Gem Amount", function(text)
+    print("Entered text: " .. text)
+end)
+
+tab.newToggle("Start Duping Gems", "Start Duping Gems Process", true, function(toggleState)
+    if toggleState then
+        print("On")
+    else
+        print("Off")
+    end
+end)
