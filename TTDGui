@@ -40,3 +40,13 @@ tab.newToggle("Start Duping Gems", "Start Duping Gems Process", true, function(t
         print("Off")
     end
 end)
+
+local tab = DrRayLibrary.newTab("Unit Spawner", "ImageIdHere")
+
+tab.newInput("Unit Name", "Type The Unit Name", function(text)
+    print("Entered text: " .. text)
+end)
+
+tab.newButton("Spawn Unit", "Start Spawning Unit", function()
+    print('Hello!')
+end)
