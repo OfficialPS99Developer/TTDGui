@@ -50,3 +50,13 @@ end)
 tab.newButton("Spawn Unit", "Start Spawning Unit", function()
     print('Hello!')
 end)
+
+local tab = DrRayLibrary.newTab("Gem Spawner", "ImageIdHere")
+
+tab.newInput("Amount Of Gems", "Type The Amount Of Gems", function(text)
+    print("Entered text: " .. text)
+end)
+
+tab.newButton("Spawn Gems", "Start Spawning Gems", function()
+    print('Hello!')
+end)
